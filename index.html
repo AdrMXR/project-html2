@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Estilos CSS con JS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="bla.js" type="text/javascript"></script>
+    
+</head>
+<body>
+    <div>
+        <h2 >Estilos CSS con JS </h2>
+        <p id="parrafo" name="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolorem temporibus ullam tempore. <br>Facere deserunt accusantium porro modi quidem provident ratione praesentium illo placeat saepe, distinctio facilis nobis rerum!<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. officiis nisi ullam distinctio amet ipsam illum repudiandae rerum cupiditate sapiente in vel quidem tempore incidunt, <br>ea laborum inventore vero perspiciatis?</p>
+        <p><br><b>Tipo de letra:<b/</p>
+        <select id="typeLetra" name="typeLetra" onchange="showFount();" class="select-css">
+          <option>Arial</option>
+          <option>Times New Roman</option>
+          <option>Calibri</option>
+          <option>Courier</option>
+        </select>
+        
+        <p><br><b>Tipo de alineación:<b/</p>
+        <select id="typeAlineacion" name="typeAlineacion" onchange="showAligment();"class="select-css">
+          <option>Left</option>
+          <option>Right</option>
+          <option>Center</option>
+          <option>Justify</option>
+        </select>
+        
+        <div class="row">
+            <p><br><b>Formato:<b/</p>
+            <div class="col-lg-5">
+                <input type="checkbox" name=checkbox  id="bold" onchange="javascript:showStyle()">Negrita
+            </div>
+            <div class="col-lg-5">
+                <input type="checkbox" name="checkbox"  id="italic" onchange="javascript:showStyle()"> Cursiva
+            </div>
+        </div>
+
+        <div>            
+            <input type="radio" name="type" id="underline" onchange="javascript:showType()">Subrayado<br>         
+            <input type="radio" name="type" id="line-through" onchange="javascript:showType()">Tachado<br>        
+        </div>
+
+        <div class="colors">
+            <p><br><b>Color de fuente:<b/</p>
+            <div class="col-lg-5">
+                <input type="checkbox" name=type  id="negro" value="#000000" onchange="javascript:showColors()">Negro
+                <input type="checkbox" name=type  id="cafe" value="#D2691E" onchange="javascript:showColors()">Café
+                <input type="checkbox" name=type  id="verde" value="#00ff00" onchange="javascript:showColors()">Verde
+            </div>
+            <div class="col-lg-5">
+                <input type="checkbox" name=type  id="azul" value="#0000ff" onchange="javascript:showColors()">Azul
+                <input type="checkbox" name=type  id="morado" value="#8A2BE2" onchange="javascript:showColors()">Morado
+                <input type="checkbox" name=type  id="rojo" value="#ff0000" onchange="javascript:showColors()">Rojo
+            </div>
+        </div>
+
+        <p><input type="submit" value="Aplicar"></p>
+    
+    </div>
+</body>
+</html>
