@@ -47,7 +47,7 @@
 
         <div class="colors">
             <p><br><b>Color de fuente:</b></p> 
-            <div class="col-lg-5">
+            <div class="col-lg-5 cuadross">
                 <div class="contenedorDeColores">
                     <input type="checkbox" checked name=type  id="negro" value="#000000" onchange="javascript:showColors()">
                 
@@ -68,7 +68,7 @@
                 
 
             </div>
-            <div class="col-lg-5">
+            <div class="col-lg-5 cuadross">
                 <div class="contenedorDeColores">
                     <input type="checkbox" name=type  id="azul" value="#0000ff" onchange="javascript:showColors()">
                 
@@ -89,9 +89,11 @@
                 
 
             </div>
+
+            <p><input type="button" onclick="applyChanges()" value="Aplicar"></p>
         </div>
 
-        <p><input type="submit" value="Aplicar"></p>
+        
     
     </div>
 </body>

@@ -98,8 +98,8 @@ body {
 }
 
 .colorcuadros {
-  width: 10px;
-  height: 10px;
+  width: 30px;
+  height: 30px;
 }
 .negro {
   background-color: black;
@@ -118,4 +118,8 @@ body {
 }
 .rojo {
   background-color: rgb(255, 0, 0);
+}
+
+.cuadross {
+  padding: 10px 0;
 }
